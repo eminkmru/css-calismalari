@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header-title,footer{
+            background-color: #7a5eb2;
+            padding: 15px;
+            color: #ffb542;
+            font: bold;
+        }
+        .menu{
+            width: 24%;
+            /* background-color: red; */
+        }
+        .content{
+            width: 75%;
+            /* background-color: seagreen; */
+        }
+        .mainmenu{
+            float:left;
+            padding: 15px;
+            margin:0;
+            padding-left: 0;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        li{
+            background-color: #4b1d57;
+            margin-bottom: 8px;
+            padding: 8px;
+            color: white;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            margin-top: 0;
+        }
+        .menu li:hover{
+            cursor: pointer;
+            background-color: #7a5eb2;  
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">Header</h1>
+    </header>
+    <main class="main clearfix">
+        <div class="menu mainmenu">
+            <ul>
+                <li>Css</li>
+                <li>Html</li>
+                <li>Javascript</li>
+            </ul>
+        </div>
+        <div class="content mainmenu">
+            <h1>Komple Web Geliştirme Eğitimi</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatibus eaque non nesciunt debitis tempore praesentium iusto pariatur quasi. Animi, sequi ad. Corporis mollitia perspiciatis veniam libero officiis. Repellat, mollitia!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatibus eaque non nesciunt debitis tempore praesentium iusto pariatur quasi. Animi, sequi ad. Corporis mollitia perspiciatis veniam libero officiis. Repellat, mollitia!</p>
+        </div>
+    </main>
+    <footer>
+        <H2>Footer</H2>
+    </footer>
+</body>
+</html>
